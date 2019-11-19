@@ -1,0 +1,36 @@
+﻿@model TesteMundivox.Application.ViewModels.TabelaVM
+<div style="backdrop-filter: blur(3px)" class="modal fade" id="modalSelectTeam" tabindex="-1" role="dialog" aria-labelledby="modalSelectTeam" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalLongoExemplo">Selecione um time!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @{
+                    List<SelectListItem> lista = new List<SelectListItem>();
+                    lista.Add(new SelectListItem() { Text = "Selecione" });
+                    foreach (var item in Model.Times)
+                    {
+                        lista.Add(new SelectListItem() { Text = item.Nome, Value = item.Id.ToString() });
+                    }
+                }
+
+
+                @Html.DropDownList("listaTimes", lista, null, new { @class = "form-control" })
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnSalvarModal" data-id="" class="btn btn-primary">Escolher</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#btnSalvarModal").click((e) => {
+        $("span[data-id=" + e.target.attributes["data-id"].value + "]").text($("#listaTimes option:selected")[0].text);
+        $("#modalSelectTeam").modal("hide");
+    })
+</script>

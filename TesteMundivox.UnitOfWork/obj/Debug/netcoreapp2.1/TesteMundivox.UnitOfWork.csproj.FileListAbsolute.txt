@@ -1,0 +1,16 @@
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.deps.json
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.pdb
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Data.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Entities.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Repositories.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Data.pdb
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Entities.pdb
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\bin\Debug\netcoreapp2.1\TesteMundivox.Repositories.pdb
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.csprojAssemblyReference.cache
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.AssemblyInfoInputs.cache
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.AssemblyInfo.cs
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.csproj.CopyComplete
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.UnitOfWork\obj\Debug\netcoreapp2.1\TesteMundivox.UnitOfWork.pdb

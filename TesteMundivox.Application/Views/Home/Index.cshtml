@@ -1,0 +1,134 @@
+﻿<link href="~/css/chaves.css" rel="stylesheet" />
+@model TesteMundivox.Application.ViewModels.TabelaVM
+@{
+    ViewData["Title"] = "Início";
+}
+
+@*<hr />
+<h5>Escolha os times:</h5>
+@foreach (var item in Model)
+{
+    <h5 class="badge badge-dark draggable" draggable="true" data-id="@item.Id">@item.Nome</h5>
+}*@
+
+<div class="row">
+    <div class="col-sm-2">
+        <div class="card mb-5 line-b">
+            <div class="card-body">
+                <span data-id="1"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(1)">Escolher time</a>
+            </div>
+        </div>
+        <div class="card mb-5">
+            <div class="card-body">
+                <span data-id="2"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(2)">Escolher time</a>
+            </div>
+        </div>
+        <div class="card mb-5">
+            <div class="card-body">
+                <span data-id="3"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(3)">Escolher time</a>
+            </div>
+        </div>
+        <div class="card mb-5">
+            <div class="card-body">
+                <span data-id="4"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(4)">Escolher time</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="margin-top: 80px;">
+            <div class="card-body">
+                <span data-id="5"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(5)">Escolher time</a>
+            </div>
+        </div>
+        <div class="card" style="margin-top: 200px;">
+            <div class="card-body">
+                <span data-id="6"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(6)">Escolher time</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="margin-top: 250px;">
+            <div class="card-body">
+                <span data-id="7"></span>
+            </div>
+            <div class="card-footer">
+                <a href="#" onclick="EscolherTime(7)">Escolher time</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="cadastrarEvento()" class="btn btn-success btn-sm">Concluir grade.</button>
+
+<hr />
+<h5>Últimos Jogos:</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Time 1</th>
+            <th>Time 2</th>
+            <th>Vencedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Jogos)
+        {
+            <tr>
+                <td>@item.Time1.Nome</td>
+                <td>@item.Time2.Nome</td>
+                <td>@item.Vencedor.Nome</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    $(".draggable").draggable({ snap: true });
+
+    function EscolherTime(id) {
+        $("#modalSelectTeam").modal('show');
+        $("#btnSalvarModal").attr("data-id", id);
+    }
+
+    function cadastrarEvento() {
+        var obj = {
+            Time1: $("span[data-id=5]")[0].innerHTML,
+            Time2: $("span[data-id=6]")[0].innerHTML,
+            TimeVencedor: $("span[data-id=7]")[0].innerHTML
+        };
+
+        $.ajax({
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            method: "POST",
+            data: JSON.stringify(obj),
+            url: "/Home/CadastrarEvento",
+            success: (e) => {
+                if (e == "OK") {
+                    window.location.reload();
+                } else {
+                    alert("Não foi possível registrar este jogo!")
+                }
+            } 
+        })
+    }
+</script>
+
+<partial name="_ModalEscolherTime" />

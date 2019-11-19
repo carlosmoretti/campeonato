@@ -1,0 +1,25 @@
+﻿@model  TesteMundivox.Entities.Times
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+@if(!String.IsNullOrEmpty((string)TempData["mensagem"]))
+{
+    <div class="alert alert-info mb-2">@TempData["mensagem"]</div>
+}
+<div class="card">
+    <div class="card-header">Cadastrar Time!</div>
+    <div class="card-body">
+        @using (Html.BeginForm("Cadastrar", "Time", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.LabelFor(d => d.Nome)
+                @Html.TextBoxFor(d => d.Nome, null, new { @class = "form-control" })
+                @Html.ValidationMessageFor(d=>d.Nome, null, new { @class="text-danger" })
+            </div>
+
+            <input type="submit" class="btn btn-sm btn-success" value="Cadastrar Time"/>
+        }
+    </div>
+</div>
+

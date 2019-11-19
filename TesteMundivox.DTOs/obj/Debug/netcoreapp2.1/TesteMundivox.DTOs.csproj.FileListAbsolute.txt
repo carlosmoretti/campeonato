@@ -1,0 +1,8 @@
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\bin\Debug\netcoreapp2.1\TesteMundivox.DTOs.deps.json
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\bin\Debug\netcoreapp2.1\TesteMundivox.DTOs.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\bin\Debug\netcoreapp2.1\TesteMundivox.DTOs.pdb
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\obj\Debug\netcoreapp2.1\TesteMundivox.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\obj\Debug\netcoreapp2.1\TesteMundivox.DTOs.AssemblyInfoInputs.cache
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\obj\Debug\netcoreapp2.1\TesteMundivox.DTOs.AssemblyInfo.cs
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\obj\Debug\netcoreapp2.1\TesteMundivox.DTOs.dll
+C:\Users\Moretti\source\repos\TesteMundivox\TesteMundivox.DTOs\obj\Debug\netcoreapp2.1\TesteMundivox.DTOs.pdb
